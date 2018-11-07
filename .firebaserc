@@ -1,0 +1,36 @@
+{
+  "projects": {
+    "default": "registroseminario-g12",
+    "master": "registroseminario-g12",
+    "prod": "registroseminario-g12"
+  },
+  "ci": {
+    "copyVersion": true,
+    "createConfig": {
+      "master": {
+        "env": "staging",
+        "firebase": {
+          "apiKey": "AIzaSyAzT76N3ny_oz59RnqWdJQH6Ln9q6o6wGE",
+          "authDomain": "registroseminario-g12.firebaseapp.com",
+          "databaseURL": "https://registroseminario-g12.firebaseio.com",
+          "projectId": "registroseminario-g12",
+          "storageBucket": "registroseminario-g12.appspot.com"
+        },
+        "sentryDsn": "${SENTRY_DSN}",
+        "analyticsTrackingId": "${GA_TRACKING_ID}"
+      },
+      "prod": {
+        "env": "production",
+        "firebase": {
+          "apiKey": "AIzaSyAzT76N3ny_oz59RnqWdJQH6Ln9q6o6wGE",
+          "authDomain": "registroseminario-g12.firebaseapp.com",
+          "databaseURL": "https://registroseminario-g12.firebaseio.com",
+          "projectId": "registroseminario-g12",
+          "storageBucket": "registroseminario-g12.appspot.com"
+        },
+        "sentryDsn": "${SENTRY_DSN}",
+        "analyticsTrackingId": "${GA_TRACKING_ID}"
+      }
+    }
+  }
+}
